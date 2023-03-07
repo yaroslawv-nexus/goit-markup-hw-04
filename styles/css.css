@@ -1,0 +1,361 @@
+:root {
+  /* SLATE */
+  --text-color: #434455;
+  /* NAVY BLUE */
+  --dark-color: #2e2f42;
+  --pressed-state: #404bbf;
+  --primary-brand: #4d5ae5;
+  --basic-white: #ffffff;
+  --alt-white: #f4f4fd;
+}
+
+/* GENERAL */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--basic-white);
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  font-family: inherit;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo,
+.logo:visited {
+  font-family: "Raleway", "sans-serif";
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.logo-web {
+  color: var(--primary-brand);
+}
+
+.index-nav .link,
+.index-nav .link:visited {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.index-nav .link:hover,
+.index-nav .link:focus {
+  color: var(--pressed-state);
+}
+
+.address .link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--pressed-state);
+}
+
+.current {
+  border-bottom: 5px solid var(--primary-brand);
+}
+
+/* flex header */
+.menu-flex {
+  display: flex;
+}
+
+.address-flex {
+  display: flex;
+}
+
+.nav-flex {
+  display: flex;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-flex .address {
+  margin-left: auto;
+}
+
+.nav-flex .nav-item:not(:last-child) {
+  margin-right: 76px;
+}
+
+.menu-flex .menu-item:not(:last-child),
+.address-flex .address-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* BODY */
+/* HERO */
+.hero.container {
+  height: 600px;
+  width: auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+.hero .title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--basic-white);
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
+}
+
+.hero .button {
+  color: var(--basic-white);
+  background-color: var(--primary-brand);
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  border: none;
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--pressed-state);
+}
+
+/* SECTIONS */
+/* .advantages .title,
+.works .title,
+.team .title  */
+
+.title {
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.title-second {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+  margin-bottom: 8px;
+}
+
+/* ADVANTAGES */
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advant-flex {
+  display: flex;
+}
+
+.advant-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.advant-flex .advant-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* WORKS */
+.works {
+  padding-bottom: 120px;
+}
+
+.works-flex {
+  display: flex;
+}
+
+.works-flex .works-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* TEAM */
+.section.team {
+  background-color: var(--alt-white);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team .container {
+  margin-bottom: 0;
+}
+
+.team img {
+  display: block;
+}
+
+.descrip-team {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.team-flex {
+  display: flex;
+}
+
+.team-flex .team-item {
+  /* height: 380px; */
+  text-align: center;
+  background-color: var(--basic-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-flex .team-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* FOOTER */
+.footer .logo {
+  color: var(--basic-white);
+  margin-bottom: 16px;
+}
+
+.footer {
+  background-color: var(--dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-div {
+  width: 264px;
+}
+
+.text-footer {
+  margin-top: 16px;
+  color: var(--alt-white);
+}
+
+/* PORTFOLIO */
+.projects {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.projects .button {
+  color: var(--primary-brand);
+  background-color: var(--alt-white);
+}
+
+/* .projects .text-card {
+  color: var(--alt-white);
+  background-color: var(--primary-brand);
+} */
+
+.projects .button:hover,
+.projects .button:focus {
+  color: var(--basic-white);
+  background-color: var(--pressed-state);
+  border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.projects-flex .projects-item {
+  width: 360px;
+}
+.projects img {
+  display: block;
+}
+
+.descrip-projects {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.buttons-flex {
+  margin-bottom: 72px;
+}
+
+.buttons-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-flex .button-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-flex .projects-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+.projects-flex .projects-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px;
+}
