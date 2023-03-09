@@ -7,6 +7,7 @@
   --primary-brand: #4d5ae5;
   --basic-white: #ffffff;
   --alt-white: #f4f4fd;
+  --customers-icon-base: #8e8f99;
 }
 
 /* GENERAL */
@@ -347,6 +348,43 @@ body {
 
 .team .social-icon {
   fill: currentColor;
+}
+
+/* CUSTOMERS */
+.section.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-flex {
+  display: flex;
+}
+
+.customers-flex .item {
+  width: 168px;
+  height: 88px;
+}
+
+.customers-flex .item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.customers-flex .link {
+  display: inline-block;
+  padding: 16px 32px;
+  border: 1px solid var(--customers-icon-base);
+  border-radius: 4px;
+  color: var(--customers-icon-base);
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-flex .link:hover,
+.customers-flex .link:focus {
+  color: var(--pressed-state);
+  border-color: var(--pressed-state);
 }
 
 /* FOOTER */
