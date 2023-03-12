@@ -51,7 +51,19 @@
       <!-- HERO -->
       <section class="hero section">
         <h1 class="title">Effective Solutions for Your Business</h1>
-        <button type="button" class="button">Order Service</button>
+        <button type="button" class="button" data-modal-open>
+          Order Service
+        </button>
+        <!-- ! MODAL -->
+        <div class="modal-drop is-hidden" data-modal>
+          <div class="modal-wind">
+            <button
+              type="button"
+              class="close-button"
+              data-modal-close
+            ></button>
+          </div>
+        </div>
       </section>
       <!-- ADVANTAGES -->
       <section class="section advantages">
@@ -286,7 +298,7 @@
       <section class="section customers">
         <div class="container">
           <h2 class="title">Customers</h2>
-          <uk class="customers-flex list">
+          <ul class="customers-flex list">
             <li class="item">
               <a href="" class="link">
                 <svg class="customers-icon" width="104" height="56">
@@ -329,7 +341,7 @@
                 </svg>
               </a>
             </li>
-          </uk>
+          </ul>
         </div>
       </section>
     </main>
@@ -379,5 +391,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
